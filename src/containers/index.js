@@ -1,1 +1,5 @@
-export * as App from './App/App';
+import App from './App/App';
+
+export {
+    App,
+};
