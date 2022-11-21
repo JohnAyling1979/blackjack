@@ -1,8 +1,16 @@
+import { Card } from '../';
 import './Player.css';
 
-function Player() {
+function Player({hand}) {
     return (
-        <div className='player-root'>Player</div>
+        <div className='player-root'>
+            <div>
+                Player
+            </div>
+            <div>
+                {hand.map((card, index) => <Card key={index} card={card} count={index} face />)}
+            </div>
+        </div>
     );
 }
 

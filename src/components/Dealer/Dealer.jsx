@@ -1,17 +1,14 @@
 import { Card } from '../';
 import './Dealer.css';
 
-function Dealer() {
+function Dealer({hand}) {
     return (
         <div className='dealer-root'>
             <div>
                 Dealer
             </div>
             <div>
-                <Card number={8} suit='heart' card={0} />
-                <Card number={'J'} suit='diamond' card={1} face />
-                <Card number={3} suit='spade' card={2} face />
-                <Card number={'A'} suit='club' card={3} face />
+                {hand.map((card, index) => <Card key={index} card={card} count={index} face={index !== 0} />)}
             </div>
         </div>
     );

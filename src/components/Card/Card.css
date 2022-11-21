@@ -1,57 +1,22 @@
 .card-root {
     width: 130px;
     height: 185px;
-    padding: 8px;
-    background-color: antiquewhite;
     position: absolute;
+}
+
+.card-root img {
+    width: 100%;
+    height: 100%;
 }
 
 .card-root-back {
     width: 130px;
-    height: 201px;
-    background-color: antiquewhite;
+    height: 185px;
     position: absolute;
 }
 
 .card-root-back img {
     width: 100%;
     height: 100%;
-}
-
-.card-border {
-    border: solid 1px;
-    padding: 4px;
-}
-
-.card-heart::after {
-    color: crimson;
-    content: '\2764';
-}
-
-.card-diamond::after {
-    color: crimson;
-    content: '\2666';
-}
-
-.card-spade::after {
-    content: '\2660';
-}
-
-.card-club::after {
-    content: '\2663';
-}
-
-.card-top {
-    font-size: 50px;
-    text-align: left;
-}
-
-.card-middle {
-    font-size: 50px;
-    text-align: left;
-}
-
-.card-bottom {
-    font-size: 50px;
-    text-align: right;
+    border-radius: 5px;
 }

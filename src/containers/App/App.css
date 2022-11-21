@@ -5,6 +5,7 @@
     max-width: 1000px;
     margin: auto;
     height: 100vh;
+    position: relative;
 }
 
 .app-table {
