@@ -1,6 +1,8 @@
+import './Player.css';
+
 function Player() {
     return (
-        <div>Player</div>
+        <div className='player-root'>Player</div>
     );
 }
 

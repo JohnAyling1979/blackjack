@@ -11,19 +11,19 @@ import './App.css';
 function App() {
   const [deck, setDeck] = useState(null);
   useEffect(() => {
-    shuffle().then(data => {
-      setDeck({
-        id: data.deck_id,
-        remaining: data.remaining
-      });
-    });
+    // shuffle().then(data => {
+    //   setDeck({
+    //     id: data.deck_id,
+    //     remaining: data.remaining
+    //   });
+    // });
   }, []);
 
   return (
-    <div className='root'>
+    <div className='app-root'>
       <Header />
-      <div className='table'>
-        <div className='play-area'>
+      <div className='app-table'>
+        <div className='app-play-area'>
           <Dealer />
           <Player />
         </div>
